@@ -1,0 +1,26 @@
+server:
+  port: 8080
+spring:
+  profiles:
+    active: prod
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/yxw?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8&useSSL=true
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+#persistence:
+#  driver: com.mysql.jdbc.Driver
+#  dialect: org.hibernate.dialect.MySQLDialect
+#  jdbcUrl: jdbc:mysql://localhost/yxw?autoReconnect=true&useSSL=false
+#  userdb: root
+#  password: root
+#  showSql: true
+#  model: pe.edu.tecsup.hibernate.model
+#  minPool: 5
+#  maxPool: 20
+#  maxIddleTime: 20
+#  acquireIncrement: 3
